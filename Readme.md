@@ -23,3 +23,5 @@ Pour pouvoir installer le projet, vous avez besoin de:
 
 ## Lancer le projet 
 `php -S localhost:8000 -t src/ `
+
+- Pour tester l'import excel, on trouve dans le dossier racine `data.xlsx`

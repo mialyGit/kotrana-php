@@ -51,15 +51,22 @@
                 </tr>
             </thead>
             <tbody>
-                <?php foreach ($products as $product): ?>
+                <?php if (count($products) > 0): ?>
+                    <?php foreach ($products as $product): ?>
+                        <tr>
+                            <td><?php echo $product['id']; ?></td>
+                            <td><?php echo $product['name']; ?></td>
+                            <td><?php echo $product['description']; ?></td>
+                            <td><?php echo $product['price']; ?></td>
+                            <td><?php echo $product['type']; ?></td>
+                        </tr>
+                    <?php endforeach; ?>
+                
+                <?php else : ?>
                     <tr>
-                        <td><?php echo $product['id']; ?></td>
-                        <td><?php echo $product['name']; ?></td>
-                        <td><?php echo $product['description']; ?></td>
-                        <td><?php echo $product['price']; ?></td>
-                        <td><?php echo $product['type']; ?></td>
+                        <td style="text-align: center;" colspan="5"> Aucun données. Veuilez importer un fichier excel </td>
                     </tr>
-                <?php endforeach; ?>
+                <?php endif; ?>
             </tbody>
         </table>
     </div>
