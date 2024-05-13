@@ -9,7 +9,7 @@ Pour pouvoir installer le projet, vous avez besoin de:
 
 ## Clôner le dépot sur Github
 
-- `git clone https://gitlab.com/meelo-gitlab/c-reflex`
+- `git clone https://github.com/mialyGit/kotrana-php.git`
 - `cd kotrana-php`
 
 ## Configuration de l'environnement
